@@ -1,9 +1,18 @@
 # JavaScript implementations
 
-1. EloquentJS exercises and tests
+## EloquentJS exercises and tests
+* Blocks:
+  * Basics
+* Tools:
    * ES6
    * Gulp
    * Mocha and Chai
-2. Data Structures:
+   
+## Data Structures:
+* Blocks:
    * Stack
    * Queue
+* Tools:
+   * ES6
+   * Gulp
+   * Mocha and Chai
