@@ -48,7 +48,9 @@ Stack.prototype.push = function(data) {
 
 Stack.prototype.pop = function() {
     if(this._size === 0) return;
+    
     let data = this._storage[this._size - 1];
+    delete this._storage[this._size -1];
     this._size --;
     
     return data;
