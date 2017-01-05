@@ -22,8 +22,8 @@ describe('Data Structures', () => {
            assert.equal(queue.size(), 2);
        });
 
-       it('should not break if we do a pop with an empty queue', () => {
-           queue.dequeue();
+       it('should not break if we do a pop with an empty queue', () => {           
+           queue.dequeue();           
            queue.enqueue(3);
            assert.equal(queue.size(), 1);
        });
@@ -34,24 +34,28 @@ describe('Data Structures', () => {
 
 function Queue() {
     this._oldIndex = 0;
-    this._newIndex = 0;
+    this._newestIndex = 0;
     this._storage = {};
 }
 
 Queue.prototype.size = function() {
-    return this._newIndex - this._oldIndex;
+    return this._newestIndex - this._oldIndex;
 }
 
 Queue.prototype.enqueue = function(data) {
-    this._storage[this._newIndex] = data;
-    this._newIndex ++;
+    this._storage[this._newestIndex] = data;
+    this._newestIndex ++;
 }
 
 Queue.prototype.dequeue = function() {
-    let val = this._storage[this._oldIndex];
-    this._oldIndex ++;
+    if(this.size() === 0) return;
     
-    return val;
+    let data = this._storage[this._oldIndex];
+    delete this._storage[this._oldIndex];
+    
+    this._oldIndex ++;
+
+    return data;
 }
 
 
