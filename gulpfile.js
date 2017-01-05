@@ -14,6 +14,11 @@ gulp.task('test_eloquent', () => {
         .pipe(mocha({ reporter: 'list' }))
         .on('error', gutil.log);
 });
+gulp.task('test_data_structures', () => {
+    return gulp.src('./data_structures/*.js', { read: false })
+        .pipe(mocha( { reporter: 'list' }))
+        .on('error', gutil.log);
+});
 
 
 //////////////////////////////////////////////////
@@ -22,4 +27,8 @@ gulp.task('test_eloquent', () => {
 
 gulp.task('tdd_eloquent', ['test_eloquent'], () => {
     gulp.watch(['./EloquentJS/code/*.js', './EloquentJS/spec/*.spec.js'], ['test_eloquent']);
+});
+
+gulp.task('tdd_ds', ['test_data_structures'], () => {
+    gulp.watch('./data_structures/*.js', ['test_data_structures']);
 });
