@@ -1,7 +1,7 @@
 const assert = require( 'chai' ).assert;
 
 describe('Data Structures', () => {
-   describe('1. Stack', () => {
+   describe('-- Stack', () => {
        let stack;
        beforeEach(() => stack = new Stack());
 
@@ -10,12 +10,12 @@ describe('Data Structures', () => {
        });
 
        it('should add an element', () => {
-           stack.push("first element");
+           stack.push('first element');
            assert.equal(stack.size(), 1);
        })
        it('should return the last element inserted', () => {
-           stack.push({value: "Object"});
-           stack.push("HoHoHO");
+           stack.push({value: 'Object'});
+           stack.push('HoHoHO');
            stack.push(30);
            assert.equal(stack.size(), 3);
            assert.equal(stack.pop(), 30);
@@ -41,17 +41,17 @@ Stack.prototype.size = function() {
     return this._size;
 }
 
-Stack.prototype.push = function(val) {
-    this._storage[this._size] = val;
+Stack.prototype.push = function(data) {
+    this._storage[this._size] = data;
     this._size ++;
 }
 
 Stack.prototype.pop = function() {
     if(this._size === 0) return;
-    let val = this._storage[this._size - 1];
+    let data = this._storage[this._size - 1];
     this._size --;
     
-    return val;
+    return data;
 }
 
 
