@@ -1,4 +1,5 @@
 # JavaScript implementations
+All content related to personal knowledge development!
 
 * Tools:
    * ES6
