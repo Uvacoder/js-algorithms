@@ -18,5 +18,13 @@
 12. [ ] [12. JavaScript and the Browser](./chapter12)
 13. [ ] [13. The Document Object Model](./chapter13)
 14. [ ] [14. Handling Events](./chapter14)
+15. [ ] [15. Project: A Platform Game](./chapter15)
+16. [ ] [16. Drawing on Canvas](./chapter16)
+17. [ ] [17. HTTP](./chapter17)
+18. [ ] [18. Forms and Form Fields](./chapter18)
+19. [ ] [19. Project: A Paint Program](./chapter19)
+20. [ ] [20. Node.js](./chapter20)
+21. [ ] [21. Project: Skill-Sharing Website](./chapter21)
+
 
 
