@@ -10,17 +10,16 @@ describe('Stack', () => {
   });
 
   it('should add an element', () => {
-    stack.push('first element');
+    assert.isTrue(stack.push('first element'));
     assert.equal(stack.size(), 1);
-    assert.equal(stack.pop(), 'first element');
   })
 
   it('should return the last element inserted', () => {
-    stack.push({ value: 'Object' });
     stack.push('HoHoHO');
     stack.push(30);
+    stack.push({ value: 'Object' });
     assert.equal(stack.size(), 3);
-    assert.equal(stack.pop(), 30);
+    assert.deepEqual(stack.pop(), { value: 'Object' });
     assert.equal(stack.size(), 2);
   });
 
