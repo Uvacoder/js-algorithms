@@ -12,7 +12,9 @@ describe('Stack', () => {
   it('should add an element', () => {
     stack.push('first element');
     assert.equal(stack.size(), 1);
+    assert.equal(stack.pop(), 'first element');
   })
+
   it('should return the last element inserted', () => {
     stack.push({ value: 'Object' });
     stack.push('HoHoHO');
@@ -22,9 +24,7 @@ describe('Stack', () => {
     assert.equal(stack.size(), 2);
   });
 
-  it('should not break if we do a pop with an empty stack', () => {
-    stack.pop();
-    stack.push(3);
-    assert.equal(stack.size(), 1);
+  it('should return null if the stack is empty', () => {
+    assert.isNull(stack.pop());
   });
 });
