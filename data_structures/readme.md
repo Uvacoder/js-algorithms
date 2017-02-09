@@ -4,19 +4,18 @@
 
 1. [x] ~~[Queue](./queue)~~
 2. [x] ~~[Stack](./stack)~~
-3. [ ] [Linked List](./linked\ list)
+3. [x] ~~[Linked List](./linked\ list)~~
 4. [ ] [Set](./set)
 5. [ ] [Tree](./tree)
 6. [ ] [Hash Table](./hash\ table)
 
 ### Basics
-For the first three there is no use of arrays, instead use of objects with numeric keys. Not even 
+No use of arrays, instead I make use of objects with numeric keys. Not even 
 used `Object.keys()` or `for (key in obj) {//etc...}` to loop over the keys.
 These classes are implemented making use of the pseudo-classical approach.
 
 ### Advance
-For the rest making use of the the new [ES6 class definition][classes]. It is assumed that the `value`
-property of each element is a string or a number.
+For the rest making use of the the new [ES6 class definition][classes].
 
 ## Future
 - [Heap](https://en.wikipedia.org/wiki/Heap_(data_structure))
