@@ -30,5 +30,5 @@ gulp.task('tdd_eloquent', ['test_eloquent'], () => {
 });
 
 gulp.task('tdd_ds', ['test_data_structures'], () => {
-  gulp.watch(['./data_structures/*.js', './data_structures/*.spec.js'], ['test_data_structures']);
+  gulp.watch(['./data_structures/**/*.js', './data_structures/**/*.spec.js'], ['test_data_structures']);
 });
