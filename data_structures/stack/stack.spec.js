@@ -48,4 +48,23 @@ describe('Stack', () => {
     stack.push(50);
     assert.equal(stack.size(), 3);
   });
+
+  it('should check if an element is contained', () => {
+    stack = new Stack(3);
+    stack.push('HoHoHO');
+    stack.push(30);
+    assert.isTrue(stack.contains(30));
+    assert.isFalse(stack.contains(31));
+  });
+
+  it('should check number of pops until match otherwise null', () => {
+    stack = new Stack(6);
+    stack.push('HoHoHO');
+    stack.push(30);
+    stack.push(332);
+    stack.push(3213123);
+    stack.push('dsadas');
+    stack.push({ value: 1 });
+    assert.equal(stack.until(30), 5);
+  });
 });
