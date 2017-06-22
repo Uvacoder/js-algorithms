@@ -4,16 +4,19 @@ function Stack (capacity) {
   this._capacity = capacity || Infinity;
 }
 
+// O(1)
 Stack.prototype.size = function () {
   return this._size;
 }
 
+// O(1)
 Stack.prototype.push = function (data) {
   if (data === undefined || this._size === this._capacity) return false;
   this._storage[this._size++] = data;
   return this._size;
 }
 
+// O(1)
 Stack.prototype.pop = function () {
   if (this._size === 0) return null;
 
@@ -23,6 +26,7 @@ Stack.prototype.pop = function () {
   return data;
 }
 
+// O(1)
 Stack.prototype.peek = function () {
   return this._storage[this._size - 1];
 }
