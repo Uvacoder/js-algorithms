@@ -31,5 +31,28 @@ Queue.prototype.peek = function () {
   return this._storage[this._head];
 }
 
+// O(n)
+Queue.prototype.contains = function (input) {
+  for (let i = this._head; i < this._tail; i++) {
+    if (isEqual(input, this._storage[i]))
+      return true;
+  }
+  return false;
+}
+
+// O(n)
+Queue.prototype.until = function (input) {
+  for (let i = this._tail - 1; i >= this._head; i--) {
+    if (isEqual(input, this._storage[i]))
+      return this.size() - i;
+  }
+  return null;
+}
 
 module.exports = Queue;
+
+// Private
+function isEqual (a, b) {
+  return (typeof a !== 'object' && b === a) ||
+    (typeof a === 'object' && JSON.stringify(a) === JSON.stringify(b));
+}

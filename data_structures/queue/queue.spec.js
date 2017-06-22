@@ -24,4 +24,23 @@ describe('Queue', () => {
   it('should return null is the empty and a dequeue operation is intended', () => {
     assert.isNull(queue.dequeue());
   });
+
+  it('should check if an element is contained', () => {
+    queue = new Queue(3);
+    queue.enqueue('HoHoHO');
+    queue.enqueue(30);
+    assert.isTrue(queue.contains(30));
+    assert.isFalse(queue.contains(31));
+  });
+
+  it('should check number of pops until match otherwise null', () => {
+    queue = new Queue(6);
+    queue.enqueue('HoHoHO');
+    queue.enqueue(30);
+    queue.enqueue(332);
+    queue.enqueue(3213123);
+    queue.enqueue('dsadas');
+    queue.enqueue({ value: 1 });
+    assert.equal(queue.until(30), 5);
+  });
 });
