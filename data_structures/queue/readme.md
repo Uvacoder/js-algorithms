@@ -1,9 +1,14 @@
-# Queue(FIFO)
+# Queue(FIFO) interface
 
 [Queues](https://en.wikipedia.org/wiki/Queue_(abstract_data_type))
 
-Implementation:
+## Notes
+* A queue can have a capacity.
+* Deleting is inefficient.
 
-- `enqueue(string)` - Adds a string to the back of the queue and returns `true`.
+## API
+
+- `enqueue(string)` - Adds a string to the back of the queue and returns the new size.
 - `dequeue()` - Removes and returns the string at the front of the queue. If the queue is empty it should return `null`.
 - `size()` - Returns the number of items in the queue.
+- `peak()` - Returns the oldest element added to the collection.

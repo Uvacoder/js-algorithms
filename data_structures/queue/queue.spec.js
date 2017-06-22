@@ -10,8 +10,7 @@ describe('Queue', () => {
   });
 
   it('should add an element', () => {
-    assert.isTrue(queue.enqueue('first element'));
-    assert.equal(queue.size(), 1);
+    assert.equal(queue.enqueue('first element'), 1);
   })
   it('should return the first element inserted', () => {
     queue.enqueue({ value: 'Object' });

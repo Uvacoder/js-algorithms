@@ -23,7 +23,7 @@ Stack.prototype.pop = function () {
   return data;
 }
 
-Stack.prototype.peak = function () {
+Stack.prototype.peek = function () {
   return this._storage[this._size - 1];
 }
 

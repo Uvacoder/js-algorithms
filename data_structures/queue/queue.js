@@ -1,28 +1,35 @@
-function Queue() {
-  this._oldIndex = 0;
-  this._newestIndex = 0;
+function Queue (capacity) {
+  this._head = 0;
+  this._tail = 0;
   this._storage = {};
+  this._capacity = capacity || Infinity;
 }
 
-Queue.prototype.size = function() {
-  return this._newestIndex - this._oldIndex;
+// O(1)
+Queue.prototype.size = function () {
+  return this._tail - this._head;
 }
 
-Queue.prototype.enqueue = function(data) {
-  this._storage[this._newestIndex] = data;
-  this._newestIndex++;
-  return true;
+// O(1)
+Queue.prototype.enqueue = function (data) {
+  if (data === undefined || this.size() === this._capacity) return false;
+  this._storage[this._tail++] = data;
+  return this.size();
 }
 
-Queue.prototype.dequeue = function() {
+// O(1)
+Queue.prototype.dequeue = function () {
   if (this.size() === 0) return null;
 
-  let data = this._storage[this._oldIndex];
-  this._storage[this._oldIndex] = null;
-
-  this._oldIndex++;
-
+  const data = this._storage[this._head];
+  this._storage[this._head++] = null;
   return data;
 }
+
+// O(1)
+Queue.prototype.peek = function () {
+  return this._storage[this._head];
+}
+
 
 module.exports = Queue;

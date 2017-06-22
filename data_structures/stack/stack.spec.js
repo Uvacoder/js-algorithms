@@ -1,7 +1,7 @@
 const assert = require('chai').assert,
   Stack = require('./stack');
 
-describe('Stack with no capactiy', () => {
+describe('Stack', () => {
   let stack;
 
   it('should be initally empty', () => {
@@ -11,7 +11,7 @@ describe('Stack with no capactiy', () => {
 
   it('should add an element', () => {
     stack = new Stack();
-    assert.isTrue(stack.push('first element'));
+    stack.push('first element')
     assert.equal(stack.size(), 1);
   })
 
@@ -25,13 +25,13 @@ describe('Stack with no capactiy', () => {
     assert.equal(stack.size(), 2);
   });
 
-  it('should peak the last element inserted', () => {
+  it('should peek the last element inserted', () => {
     stack = new Stack();
     stack.push('HoHoHO');
     stack.push(30);
     stack.push({ value: 'Object' });
     assert.equal(stack.size(), 3);
-    assert.deepEqual(stack.peak(), { value: 'Object' });
+    assert.deepEqual(stack.peek(), { value: 'Object' });
     assert.equal(stack.size(), 3);
   });
 
