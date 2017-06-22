@@ -16,5 +16,7 @@
 * `pop()` - Removes and returns the last element on the top of the stack. If the stack is empty it should return `null`.
 * `size()` - Returns the number of items in the stack.
 * `peak()` - Returns the last elemented inserted without deleting it.
-
+-----------
+- `contain(input)` - Returns true if the `input` is contained in the stack.
+- `until(input)` - Returns the number of pops before the `input` is reached.
 
