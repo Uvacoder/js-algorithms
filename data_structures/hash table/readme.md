@@ -9,5 +9,4 @@ Implementation:
 	- `retrieve(key)` - Returns the value associated with the key (if the key does not exist, it returns `undefined`).
 	- `remove(key)` - Returns a boolean, reflecting whether the key / value pair has been removed.
 
-
-- To prevent collisions, make your hash table self-resizing. It should double in size as soon as 75% of the available space has been filled, and shrink to half when space usage falls below 25%.
+- To prevent collisions, the hash table is self-resizing. It doubles in size as soon as 75% of the available space has been filled, and shrink to half when space usage falls below 25%.
