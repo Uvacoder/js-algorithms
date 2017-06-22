@@ -34,9 +34,7 @@ Stack.prototype.peek = function () {
 // O(n)
 Stack.prototype.contains = function (input) {
   for (let i = 0; i < this._size; i++) {
-    const val = this._storage[i];
-    if ((typeof input !== 'object' && val === input) ||
-      (typeof input === 'object' && JSON.stringify(input) === JSON.stringify(val)))
+    if (isEqual(input, this._storage[i]))
       return true;
   }
   return false;
@@ -45,10 +43,17 @@ Stack.prototype.contains = function (input) {
 // O(n)
 Stack.prototype.until = function (input) {
   for (let i = this._size - 1; i >= 0; i--) {
-    if (this._storage[i] === input)
+    if (isEqual(input, this._storage[i]))
       return this._size - i;
   }
   return null;
 }
 
 module.exports = Stack;
+
+
+// Private
+function isEqual (a, b) {
+  return (typeof a !== 'object' && b === a) ||
+    (typeof a === 'object' && JSON.stringify(a) === JSON.stringify(b));
+}
