@@ -11,7 +11,7 @@ Stack.prototype.size = function () {
 Stack.prototype.push = function (data) {
   if (data === undefined || this._size === this._capacity) return false;
   this._storage[this._size++] = data;
-  return true;
+  return this._size;
 }
 
 Stack.prototype.pop = function () {
