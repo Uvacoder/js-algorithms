@@ -1,5 +1,7 @@
 # Data Structures
 
+Container for data that fits different needs.
+
 ## Table Content
 
 1. [x] ~~[Queue](./queue)~~
@@ -9,13 +11,11 @@
 5. [ ] [Tree](./tree)
 6. [ ] [Hash Table](./hash\ table)
 
-### Basics
-No use of arrays, instead I make use of objects with numeric keys. Not even 
-used `Object.keys()` or `for (key in obj) {//etc...}` to loop over the keys.
-These classes are implemented making use of the pseudo-classical approach.
-
-### Advance
-For the rest making use of the the new [ES6 class definition][classes].
+## Notes
+* No use of arrays, instead it is recommended to use numeric keys. 
+  * No use of `Object.keys()` or `for (key in obj) {//etc...}` to loop over the keys.
+* Some classes are implemented making use of the pseudo-classical approach.
+* Some others make use of the the new [ES6 class definition][classes].
 
 ## Future
 - [Heap](https://en.wikipedia.org/wiki/Heap_(data_structure))
