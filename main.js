@@ -33,6 +33,21 @@ console.log(exponent(7));
 console.log(recursiveExponent(7));
 
 //5. Write a function 'recursiveMultiplier' that takes two arguments, 'arr and num', and multiplies each arr value into by num and returns an array of the values.
+function recursiveMultiplierWrapper (arr, val) {
+  var output = [];
+  var fn = function () {
+    if (arr.length) {
+      output.push(arr.shift() * val);
+      fn();
+    }
+    return;
+  }
+  fn();
+  return output;
+}
+
+console.log(recursiveMultiplierWrapper([1, 2, 3, 4], 2));
+
 function recursiveMultiplier (arr, val) {
   if (arr.length === 1) return arr[0] * val;
   return [arr.shift() * val].concat(recursiveMultiplier(arr, val));
@@ -41,6 +56,23 @@ function recursiveMultiplier (arr, val) {
 console.log(recursiveMultiplier([1, 2, 3, 4], 2));
 
 //6. Write a function 'recursiveReverse' that takes an array and uses recursion to return its contents in reverse
+function reverseWrapperFunction (arr) {
+  var reversedArr = [];
+
+  var fn = function (orderedArr) {
+    if (orderedArr.length) {
+      reversedArr.push(orderedArr.pop());
+      fn(orderedArr);
+    }
+    return;
+  }
+  fn(arr);
+  return reversedArr;
+}
+
+console.log(reverseWrapperFunction([1, 2, 3, 4]));
+
+
 function reverse (arr) {
   if (arr.length === 1) return arr[0];
   return [arr.pop()].concat(reverse(arr));
