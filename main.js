@@ -25,12 +25,12 @@ function exponent (base, exp) {
 
 //4. Write a function 'RecursiveExponent' that takes two arguments base, and expo, recursively returns exponent value of the base.
 function recursiveExponent (base, exp) {
-  if (exp === 1) return 1;
+  if (exp === 1) return base;
   return base * exponent(base, --exp);
 }
 
-console.log(exponent(7));
-console.log(recursiveExponent(7));
+console.log(exponent(2, 5));
+console.log(recursiveExponent(2, 5));
 
 //5. Write a function 'recursiveMultiplier' that takes two arguments, 'arr and num', and multiplies each arr value into by num and returns an array of the values.
 function recursiveMultiplierWrapper (arr, val) {
