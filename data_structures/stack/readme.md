@@ -20,3 +20,6 @@
 - `contain(input)` - Returns true if the `input` is contained in the stack.
 - `until(input)` - Returns the number of pops before the `input` is reached.
 
+
+## Extra mile
+* MinStack -> Tracks minimum value - O(1)
