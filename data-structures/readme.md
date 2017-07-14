@@ -1,6 +1,14 @@
 # Data Structures
 
-Container for data that fits different needs.
+* Containers for data that fits different needs.
+
+* The data in the data structures are processed by certain operations. The particular data structure chosen largely depends on the frequency of the operation that needs to be performed on the data structure:
+* Traversing
+* Searching
+* Insertion
+* Deletion
+* Sorting
+* Merging
 
 ## Table Content
 

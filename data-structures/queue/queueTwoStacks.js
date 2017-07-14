@@ -1,8 +1,8 @@
-function Queue (capacity) {
-  this._head = 0;
-  this._tail = 0;
-  this._storage = {};
-  this._capacity = capacity || Infinity;
+'use strict';
+const Stack = require('./../stack/stack');
+function Queue2Stacks (capacity) {
+  this._head = new Stack(capacity);
+  this._tail = new Stack(capacity);
 }
 
 // O(1)

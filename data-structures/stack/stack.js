@@ -1,3 +1,5 @@
+'use strict';
+
 function Stack (capacity) {
   this._size = 0;
   this._storage = {};

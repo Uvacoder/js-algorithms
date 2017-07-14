@@ -1,3 +1,5 @@
+'use strict';
+
 const Stack = require('./stack');
 
 function MinStack (capacity) {
