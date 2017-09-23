@@ -1,3 +1,5 @@
+https://travis-ci.org/yhabib/implementations-javascript.svg?branch=master
+
 # JavaScript implementations
       
 ## Content
