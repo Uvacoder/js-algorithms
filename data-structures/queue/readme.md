@@ -4,7 +4,7 @@
 
 ## Notes
 * A queue can have a capacity.
-* Deleting is inefficient.
+* Delete operation with objects is inefficient.
 
 ## API
 
