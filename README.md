@@ -1,5 +1,5 @@
 # JavaScript implementations
-![Build status](https://travis-ci.org/yhabib/implementations-javascript.svg?branch=master)
+[![Build Status](https://travis-ci.org/yhabib/implementations-javascript.svg?branch=master)](https://travis-ci.org/yhabib/implementations-javascript)
 
       
 ## Content
