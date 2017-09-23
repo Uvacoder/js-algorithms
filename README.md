@@ -1,6 +1,6 @@
+# JavaScript implementations
 ![Build status](https://travis-ci.org/yhabib/implementations-javascript.svg?branch=master)
 
-# JavaScript implementations
       
 ## Content
 * **[Data Structures](./data-structures)**
