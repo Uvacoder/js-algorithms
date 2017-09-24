@@ -4,7 +4,7 @@
       
 ## Content
 * **[Data Structures](./data-structures)**
-	* `$ gulp test_data_structures`
+	* `$ gulp test-data-structures`
 * **[Big O Notation](./big-o-notation)**
 * **[Recursion](./recursion)**
 
