@@ -20,7 +20,7 @@
 6. [ ] [Hash Table](./hash\ table)
 
 ## Notes
-* No use of arrays, instead it is recommended to use numeric keys. 
+* No use of arrays instead objects. 
   * No use of `Object.keys()` or `for (key in obj) {//etc...}` to loop over the keys.
 * Some classes are implemented making use of the pseudo-classical approach.
 * Some others make use of the the new [ES6 class definition][classes].
