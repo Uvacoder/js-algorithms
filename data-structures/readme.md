@@ -1,8 +1,8 @@
 # Data Structures
 
-* Containers for data that fits different needs.
+Containers for data that fits different needs.
 
-* The data in the data structures are processed by certain operations. The particular data structure chosen largely depends on the frequency of the operation that needs to be performed on the data structure:
+The data in the data structures are processed by certain operations. The particular data structure chosen largely depends on the frequency of the operation that needs to be performed on the data structure:
 * Traversing
 * Searching
 * Insertion
@@ -15,7 +15,7 @@
 1. [x] ~~[Queue](./queue)~~
 2. [x] ~~[Stack](./stack)~~
 3. [x] ~~[Linked List](./linked\ list)~~
-4. [ ] [Set](./set)
+4. [x] ~~[Set](./set)~~
 5. [ ] [Tree](./tree)
 6. [ ] [Hash Table](./hash\ table)
 
