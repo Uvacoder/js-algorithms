@@ -21,5 +21,5 @@ gulp.task('test-data-structures', () => {
 //////////////////////////////////////////////////
 
 gulp.task('tdd_ds', ['test-data-structures'], () => {
-  gulp.watch(['./data-structures/**/*.js', './data-structures/**/*.spec.js'], ['test_data_structures']);
+  gulp.watch(['./data-structures/**/*.js', './data-structures/**/*.spec.js'], ['test-data-structures']);
 });
