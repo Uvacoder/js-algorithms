@@ -35,7 +35,7 @@ Stack.prototype.peek = function () {
 
 // O(n)
 Stack.prototype.contains = function (input) {
-  for (let i = 0; i < this._size; i++) {
+  for (var i = 0; i < this._size; i++) {
     if (isEqual(input, this._storage[i]))
       return true;
   }
@@ -44,7 +44,7 @@ Stack.prototype.contains = function (input) {
 
 // O(n)
 Stack.prototype.until = function (input) {
-  for (let i = this._size - 1; i >= 0; i--) {
+  for (var i = this._size - 1; i >= 0; i--) {
     if (isEqual(input, this._storage[i]))
       return this._size - i;
   }
