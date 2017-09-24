@@ -12,9 +12,9 @@ Implementation:
 - `remove(value)` - Deletes an entry from the set and returns `true`.
 - `all()` - Returns an array with all entries.
 - `size()` -  Returns length of the set.
-- `union(a, b)` - Returns a set with all elements that are in A or B
-- `intersection(a, b)` - Returns a set with all elements that are in A and B
-- `difference(a, b)` - Returns a set with all elements that are in A but not in B
+- `union(b)` - Returns a set with all elements that are in A or B
+- `intersection(b)` - Returns a set with all elements that are in A and B
+- `difference(b)` - Returns a set with all elements that are in A but not in B
 
 - Extra functionality:
   - A value can belong to more than one set, and for each value you can say what sets it belongs to.
