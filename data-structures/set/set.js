@@ -56,7 +56,7 @@ Set.prototype.union = function (set) {
   }, new Set);
 }
 
-// O(n^2) - to be refactored
+// O(n) 
 Set.prototype.intersection = function (set) {
   var concat = this.all().concat(set.all());
 
