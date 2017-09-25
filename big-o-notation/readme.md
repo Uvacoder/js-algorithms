@@ -7,7 +7,7 @@
   * How much time is it needed, how many operations do you have to do??
     * Number of comparissons made?
     * Number of swapsss?(sorting)
-  * It is relative to that is why we use the time complexity notation(relative speed):
+  * It is not an absolute measure, that is why we use the time complexity notation(relative speed):
     * Machine
     * Language
     * Data set
@@ -22,4 +22,4 @@
 | exponential | O(k^n)   |
 | factorial   | O(n!)    |
 
-![Big O Table](bigOTable.png)
+![Big O Table](BigOTable.png)
