@@ -59,20 +59,16 @@ Set.prototype.union = function (set) {
 // O(n^2) - to be refactored
 Set.prototype.intersection = function (set) {
   var concat = this.all().concat(set.all());
-  var difference = [];
 
-  concat.forEach(function (val) {
-    if (this.all().indexOf(val) > -1
-      && set.all().indexOf(val) > -1
-      && difference.indexOf(val) === -1
+  return concat.reduce(function (acc, val) {
+    if (this.has(val)
+      && set.has(val)
+      && !acc.has(val)
     )
-      difference.push(val);
-  }, this);
+      acc.add(val);
 
-  return difference.reduce(function (acc, val) {
-    acc.add(val);
     return acc;
-  }, new Set());
+  }.bind(this), new Set());
 }
 
 // O(n)
