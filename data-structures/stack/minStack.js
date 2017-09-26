@@ -9,6 +9,7 @@ function MinStack (capacity) {
   this._min = new Stack();
 }
 
+// O(1)
 MinStack.prototype.size = function () {
   return this._index;
 }
