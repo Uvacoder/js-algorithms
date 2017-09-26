@@ -14,10 +14,10 @@ The data in the data structures are processed by certain operations. The particu
 
 1. [x] ~~[Queue](./queue)~~
 2. [x] ~~[Stack](./stack)~~
-3. [x] ~~[Linked List](./linked\ list)~~
+3. [x] ~~[Linked List](./linked-list)~~
 4. [x] ~~[Set](./set)~~
 5. [ ] [Tree](./tree)
-6. [ ] [Hash Table](./hash\ table)
+6. [ ] [Hash Table](./hash-table)
 
 ## Notes
 * No use of arrays instead objects. 
